@@ -56,7 +56,8 @@ nav ul li {
   display: inline-block;
   margin: 0 2rem;
 }
-
+li :hover 
+{color:blueviolet;}
 
 
 main {
@@ -168,7 +169,6 @@ aside p {
 
 
 .one {
-  
   display: grid;
   grid-gap: 40px;
   display: inline;
@@ -180,4 +180,52 @@ aside p {
   padding: 50px;
   margin: 20px;
 }
+
+#id{font-family: 'Courier New', Courier, monospace;}
+
 i{width:2px;height:3px;}
+
+.float-left{float: left;
+}
+.css-herz {
+  display: inline-block;
+  width: 122px;
+  height: 122px;
+  /*  border: 1px solid silver;*/
+
+  position: relative;
+
+  margin-top: 50px;
+  margin-left: 50px;
+
+  color: white;
+  font-size: 2em;
+}
+
+.css-herz:before, 
+.css-herz:after {
+  content: "";  /* ohne Inhalt */
+  background-color: red;
+  width: 80px;
+  height: 120px;
+  position: absolute;
+    
+  text-align: center;
+  border-radius: 40px 40px 0 0;
+  
+  transform-origin: 0 100%; 
+  transform: rotate(-45deg);  
+}
+    
+.css-herz:before {
+  left: 80px;
+}    
+
+.css-herz:after {
+  content: "";  /* ohne Inhalt */
+  /*  background-color: hsla(0, 50%, 80%, .6);*/
+  transform: rotate(45deg);    
+  transform-origin: 100% 100%;
+    
+  border-radius: 60px 40px 0 0;    
+}
