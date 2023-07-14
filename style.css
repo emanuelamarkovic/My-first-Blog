@@ -57,6 +57,8 @@ nav ul li {
   margin: 0 2rem;
 }
 
+
+
 main {
   margin-top: 30px;
 }
@@ -162,27 +164,15 @@ aside p {
 #flex-container {
   display: inline-block;
   justify-content: space-between;
-
-  /* background-color: #a4acb1; */
 }
 
-/* .position {
-  display: flex;
-  justify-content: space-between;
 
-  margin: 20px;
-  padding: 20px;
-  font-size: 30px;
-} */
 .one {
-  /* {margin-top: 120px;
-    margin-bottom: 120px; */
+  
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, 260px); */
   grid-gap: 40px;
   display: inline;
   justify-content: center;
-  /* background-color: lightgrey; */
   background-image: linear-gradient (url grey gren yellow);
   width: 500px;
   height: 500px;
@@ -190,3 +180,4 @@ aside p {
   padding: 50px;
   margin: 20px;
 }
+i{width:2px;height:3px;}
