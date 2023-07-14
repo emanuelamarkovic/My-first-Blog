@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fasthand&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Open+Sans:ital,wght@1,300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,43 +6,34 @@
 }
 
 h1 {
-  font-family: "Fasthand", cursive;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* body */
 body {
-  background-color: #fcf8e8;
+  background-color: #f9f9f9;
   color: black;
   width: 100%;
   height: 100vh;
 }
 /* header */
 header {
-  display: flex;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  align-items: left;
-  position: sticky;
-  top: 0px;
-  background-color: #fcf8e8;
-  flex-direction: column;
-
-  /* border-bottom: 3px solid black; */
-  width: 100%;
-  min-height: 100px;
-}
-.linie {
+  background-color: #f9f9f9;
   border: 2px solid black;
   width: 90%;
   margin: auto;
-}
+  /* padding: 20px; */
 
-/* logo my blog */
-#blog {
-  font-size: 2em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 10vh;
+  z-index: 99;
 }
 
 ul {
+  justify-content: center;
+  text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-style: bold;
   display: flex;
@@ -66,16 +56,34 @@ nav ul li {
   display: inline-block;
   margin: 0 2rem;
 }
-#header {
-  /* border-top: 2px solid black ; */
+
+main {
+  margin-top: 30px;
+}
+/* h1 */
+.header {
   text-align: center;
   font-size: 30px;
-  /* font-family: "Caprasimo", cursive;
-  font-family: "Fasthand", cursive; */
   height: 5vh;
+  background-position: center;
+  margin: 140px auto 90px;
+}
+/* big picture 1 */
+#parent {
+  height: 660px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-color: #a4acb1;
+  background-image: url(./christopher-gower-m_HRfLhgABo-unsplash.jpg);
+  position: relative;
+
+  margin: 0 auto;
+  color: aliceblue;
 }
 
 /* main */
+
 section {
   margin-top: 30px;
 }
@@ -89,11 +97,21 @@ div {
   justify-content: center;
   text-align: center;
   align-items: center;
-  width: 100%;
+  width: 90%;
+  margin: 30px;
+}
+.left {
+  float: left;
+}
+
+aside {
+  display: flex;
+  float: right;
+  clear: both;
 }
 
 img {
-  border: 5px solid #a4907c;
+  border: 5px solid gray;
   width: 402px;
   height: 302px;
 }
@@ -105,7 +123,7 @@ img {
 p {
   display: flex;
   text-align: left;
-  width: 75%;
+  width: 50%;
 
   margin: 0 150 0 150;
   padding: 10px;
@@ -122,4 +140,53 @@ footer {
 
   width: 100%;
   height: 10vh;
+}
+aside {
+  width: 40%;
+  padding-left: 0.5rem;
+  margin-left: 0.5rem;
+  float: right;
+  box-shadow: inset 5px 0 5px -5px #29627e;
+  font-style: italic;
+  color: #29627e;
+}
+
+aside > p {
+  margin: 0.5rem;
+}
+
+aside p {
+  font-family: "Fira Sans", sans-serif;
+}
+
+#flex-container {
+  display: inline-block;
+  justify-content: space-between;
+
+  /* background-color: #a4acb1; */
+}
+
+/* .position {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 20px;
+  padding: 20px;
+  font-size: 30px;
+} */
+.one {
+  /* {margin-top: 120px;
+    margin-bottom: 120px; */
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, 260px); */
+  grid-gap: 40px;
+  display: inline;
+  justify-content: center;
+  /* background-color: lightgrey; */
+  background-image: linear-gradient (url grey gren yellow);
+  width: 500px;
+  height: 500px;
+  border: 1px solid grey;
+  padding: 50px;
+  margin: 20px;
 }
