@@ -89,6 +89,10 @@ main {
 
 section {
   margin-top: 30px;
+  /* text-align: center;
+  justify-content: center;
+  width: 80%;
+  border: 2px solid black; */
 }
 
 h2 {
@@ -106,12 +110,22 @@ div {
 .left {
   float: left;
 }
+.relative{
+  position: relative;
+  width: 400px;
+  float: left;
+
+}
 
 aside {
-  display: flex;
-  float: right;
-  clear: both;
+  width: 200px;
+  left: 50%;
+  position: absolute;
+  background: yellow;
 }
+  /* float: right; */
+  /* clear: both; */
+
 
 img {
   border: 5px solid gray;
@@ -146,7 +160,7 @@ footer {
 }
 /* selbstreflexion.html text */
 aside {
-  width: 40%;
+  width: 60%;
   padding-left: 0.5rem;
   margin-left: 0.5rem;
   float: right;
@@ -230,3 +244,35 @@ i{width:2px;height:3px;}
     
   border-radius: 60px 40px 0 0;    
 }
+.center{margin: auto;}
+
+.float {
+  border: 2px solid red;
+  width: 70%;
+  height: 60vh;
+  margin: 10px;
+ margin-top: 10px;
+  margin-bottom: 10px;}
+
+
+.float-left{
+  border: 1px solid #7df758;
+  width: 50%;
+  height: 5vh;
+  margin-right: 10px;
+  margin: 0 10px 0 0;
+ } 
+
+/* p {
+  font-size: 2em;
+} */
+
+/* semantic name */
+/* .section-left {
+  border: 2px solid black;
+} */
+
+/* functional name */
+ .float-left{
+  float: left;
+} 
