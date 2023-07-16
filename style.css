@@ -1,12 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Lilita+One&family=Open+Sans:ital,wght@1,300&display=swap");
 * {
-  margin: 0;
+  margin: 0px;
   padding: 0;
   box-sizing: border-box;
 }
 
 h1 {
   font-family: "Open Sans", sans-serif;
+  margin-top: 130px;
+  text-align: center;
+  font-size: 30px;
+  height: 5vh;
+  background-position: center;
+  margin: 140px auto 90px;
+}
+h2 {
+  margin-top: 40px;
+  text-align: center;
 }
 
 /* body */
@@ -40,11 +50,11 @@ ul {
   align-content: space-between;
   list-style-type: none;
 }
-
-a {
+/* text decoration a*/
+ a { 
   color: black;
   text-decoration: none;
-}
+} 
 
 /* li */
 nav ul {
@@ -56,21 +66,18 @@ nav ul li {
   display: inline-block;
   margin: 0 2rem;
 }
-li :hover 
-{color:blueviolet;}
-
+li :hover {
+  color: blueviolet;
+}
 
 main {
   margin-top: 30px;
 }
-/* h1 */
-.header {
-  text-align: center;
-  font-size: 30px;
-  height: 5vh;
-  background-position: center;
-  margin: 140px auto 90px;
-}
+
+
+
+/* main */
+
 /* big picture 1 */
 #parent {
   height: 660px;
@@ -85,19 +92,14 @@ main {
   color: aliceblue;
 }
 
-/* main */
-
 section {
-  margin:auto;
+  margin: auto;
   text-align: center;
   justify-content: center;
   width: 80%;
-  
 }
 
-h2 {
-  text-align: center;
-}
+
 div {
   display: flex;
   flex-direction: column;
@@ -107,26 +109,34 @@ div {
   width: 90%;
   margin: 30px;
 }
-.left {
-  float: left;
-}
-/* .relative{
-  position: relative;
-  width: 400px;
-  float: left;
+footer{background-color:#79B4B7;
+ width: 100%;
+height: 10vh;
+margin-bottom: 0px;
+padding: 20px;}
 
-} */
 
-/* aside {
-  width: 200px;
+
+/* p element */
+.first {
+  display: flex;
+  text-align: left;
+  width: 50%;
+
+  margin: 0 150 0 150;
+  padding: 10px;
+} 
+
+/* selbstreflexion text */
+
+
+aside {
+  margin-top: 50px;
+  width: 50px;
   left: 50%;
-  position: absolute;
-  background: yellow;
-} */
-  
-
-
-img {
+}
+/* images selbstreflexion */
+.grey {
   border: 5px solid gray;
   width: 402px;
   height: 302px;
@@ -136,27 +146,6 @@ img {
   display: inline-block;
 }
 
-p {
-  display: flex;
-  text-align: left;
-  width: 50%;
-
-  margin: 0 150 0 150;
-  padding: 10px;
-}
-
-/* footer for all side*/
-
-footer {
-  background-color: #54bab9;
-  border-top: 4px solid white;
-  text-align: center;
-  position: sticky;
-  margin-bottom: 0px;
-
-  width: 100%;
-  height: 10vh;
-}
 /* selbstreflexion.html text */
 aside {
   width: 60%;
@@ -175,19 +164,16 @@ aside > p {
 aside p {
   font-family: "Fira Sans", sans-serif;
 }
-/* boxen */
+/* boxen  in inde html*/
 #flex-container {
   display: inline-block;
   justify-content: space-between;
 }
-
-
+/* boxen */
 .one {
-  display: grid;
-  grid-gap: 40px;
   display: inline;
   justify-content: center;
-  background-image: linear-gradient (url grey gren yellow);
+
   width: 500px;
   height: 500px;
   border: 1px solid grey;
@@ -195,20 +181,74 @@ aside p {
   margin: 20px;
 }
 
-#id{font-family: 'Courier New', Courier, monospace;}
 
-i{width:2px;height:3px;}
-
-.float-left{float: left;
+.float-left {
+  float: left;
 }
-/* heart */
-.css-herz {
+
+.center {
+  margin: auto;
+}
+/* web development.html */
+#mitte {
+  margin-top: 50px;
+  padding: 30px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.web-development {
+  border: 2px solid red;
+  width: 60%;
+  /* height: 100vh; */
+
+  margin: 80px;
+  margin-bottom: 80px;
+}
+
+.float-left,
+.float-right {
+  border: 3px solid grey;
+
+  margin-right: 10px;
+  margin: 30px 50px 0 0;
+}
+
+.section-left {
+  border: 2px solid black;
+  margin: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+.clear-float {
+  clear: left;
+}
+
+.web-development {
+  font-size: 1em;
+  float: inline-start;
+}
+
+.float-right {
+  display: block;
+}
+/* .css-herz {
   display: inline-block;
   width: 122px;
   height: 122px;
   /*  border: 1px solid silver;*/
 
-  position: relative;
+/* position: relative;
 
   margin-top: 50px;
   margin-left: 50px;
@@ -219,13 +259,14 @@ i{width:2px;height:3px;}
 
 .css-herz:before, 
 .css-herz:after {
-  content: "";  /* ohne Inhalt */
+  content: "";  
   background-color: red;
   width: 80px;
   height: 120px;
   position: absolute;
     
   text-align: center;
+
   border-radius: 40px 40px 0 0;
   
   transform-origin: 0 100%; 
@@ -237,42 +278,10 @@ i{width:2px;height:3px;}
 }    
 
 .css-herz:after {
-  content: "";  /* ohne Inhalt */
+  content: "";  
+ 
   transform: rotate(45deg);    
   transform-origin: 100% 100%;
     
   border-radius: 60px 40px 0 0;    
-}
-.center{margin: auto;}
-
-/* .float {
-  border: 2px solid red;
-  width: 70%;
-  height: 60vh;
-  margin: 10px;
- margin-top: 10px;
-  margin-bottom: 10px;} */
-
-
-/* .float-left{
-  border: 1px solid #7df758;
-  width: 50%;
-  height: 5vh;
-  margin-right: 10px;
-  margin: 0 10px 0 0;
- }  */
-
-/* p {
-  font-size: 2em;
 } */
-
-/* semantic name */
-/* .section-left {
-  border: 2px solid black;
-} */
-
-/* functional name */
- /* .float-left{
-  float: left;
-  clear: both;
-}  */
