@@ -210,6 +210,7 @@ h1 {
 
 .float-left,
 .float-right {
+  object-fit: cover;
   border: 3px solid grey;
 
   margin-right: 10px;
