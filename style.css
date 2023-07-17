@@ -51,11 +51,16 @@ ul {
   align-content: space-between;
   list-style-type: none;
 }
+
 /* text decoration a*/
  a { 
   color: black;
   text-decoration: none;
 } 
+
+a :visited{
+  color: grey;
+}
 
 /* li */
 nav ul {
