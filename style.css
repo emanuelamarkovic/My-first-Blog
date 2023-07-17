@@ -14,6 +14,7 @@ h1 {
   background-position: center;
   margin: 140px auto 90px;
 }
+
 h2 {
   margin-top: 40px;
   text-align: center;
@@ -66,17 +67,15 @@ nav ul li {
   display: inline-block;
   margin: 0 2rem;
 }
+
 li :hover {
   color: blueviolet;
 }
 
+/* main */
 main {
   margin-top: 30px;
 }
-
-
-
-/* main */
 
 /* big picture 1 */
 #parent {
@@ -127,14 +126,7 @@ padding: 20px;}
   padding: 10px;
 } 
 
-/* selbstreflexion text */
 
-
-aside {
-  margin-top: 50px;
-  width: 50px;
-  left: 50%;
-}
 /* images selbstreflexion */
 .grey {
   border: 5px solid gray;
@@ -147,6 +139,13 @@ aside {
 }
 
 /* selbstreflexion.html text */
+
+aside {
+  margin-top: 50px;
+  width: 50px;
+  left: 50%;
+}
+
 aside {
   width: 60%;
   padding-left: 0.5rem;
